@@ -1,0 +1,21 @@
+[project]
+name = "bid-amazonia-pop-centers"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bokeh>=3.7.2",
+    "dask[distributed]>=2025.3.0",
+    "folium>=0.19.5",
+    "ipywidgets>=8.1.6",
+    "mapclassify>=2.8.1",
+    "matplotlib>=3.9.2",
+    "pandarallel>=1.6.5",
+    "rio-cogeo>=5.4.1",
+    "seaborn>=0.13.2",
+    "urbanpy",
+]
+
+[tool.uv.sources]
+urbanpy = { git = "https://github.com/EL-BID/urbanpy.git" }
